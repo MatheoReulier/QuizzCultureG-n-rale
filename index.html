@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz de Culture Générale</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="script" href="script.js">
+</head>
+<body>
+    <div id="quiz-container">
+        <div id="question-info">
+            <span id="question-number"></span>
+            <span id="timer"></span>
+        </div>
+        <h2 id="question-text"></h2>
+        <div id="options-container">
+            <button class="option" onclick="checkAnswer(this)"></button>
+            <button class="option" onclick="checkAnswer(this)"></button>
+            <button class="option" onclick="checkAnswer(this)"></button>
+            <button class="option" onclick="checkAnswer(this)"></button>
+        </div>
+        <button id="joker" onclick="useJoker()">Joker (50/50)</button>
+        <button id="start-btn" onclick="startQuiz()">Jouer</button>
+        <button id="home-btn" onclick="goHome()">Accueil</button>
+    </div>
+
+    <div id="score-container" style="display: none;">
+        Votre score : <span id="score">0</span> / <span id="total-questions">0</span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
